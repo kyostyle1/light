@@ -1,5 +1,5 @@
 {
-  "name": "cottect",
+  "name": "cottect/core",
   "description": "Cottect based on Phalcon REST Boilerplate",
   "autoload": {
     "psr-0": {
