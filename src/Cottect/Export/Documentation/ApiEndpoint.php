@@ -1,15 +1,15 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: BangDinh
- * Date: 7/13/17
- * Time: 23:49
- */
 namespace Cottect\Export\Documentation;
 
-class ApiEndpoint extends \PhalconRest\Export\Documentation\ApiEndpoint
+class ApiEndpoint
 {
+    protected $name;
+    protected $description;
+    protected $httpMethod;
+    protected $path;
+    protected $exampleResponse;
+    protected $allowedRoles = [];
     protected $exampleParameters;
     protected $exampleHeaders;
 
@@ -43,5 +43,65 @@ class ApiEndpoint extends \PhalconRest\Export\Documentation\ApiEndpoint
     public function setExampleHeaders($exampleHeaders)
     {
         $this->exampleHeaders = $exampleHeaders;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    public function getHttpMethod()
+    {
+        return $this->httpMethod;
+    }
+
+    public function setHttpMethod($httpMethod)
+    {
+        $this->httpMethod = $httpMethod;
+    }
+
+    public function getPath()
+    {
+        return $this->path;
+    }
+
+    public function setPath($path)
+    {
+        $this->path = $path;
+    }
+
+    public function getExampleResponse()
+    {
+        return $this->exampleResponse;
+    }
+
+    public function setExampleResponse($exampleResponse)
+    {
+        $this->exampleResponse = $exampleResponse;
+    }
+
+    public function getAllowedRoles()
+    {
+        return $this->allowedRoles;
+    }
+
+    public function setAllowedRoles($allowedRoles)
+    {
+        $this->allowedRoles = $allowedRoles;
     }
 }

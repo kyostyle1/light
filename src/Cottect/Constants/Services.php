@@ -2,8 +2,10 @@
 
 namespace Cottect\Constants;
 
-class Services extends \PhalconRest\Constants\Services
+class Services extends \PhalconApi\Constants\Services
 {
+    const FRACTAL_MANAGER = 'fractalManager';
+    const PHQL_QUERY_PARSER = 'phqlQueryParser';
     const CONFIG = 'config';
     const VIEW = 'view';
     const API_SERVICE = 'api';

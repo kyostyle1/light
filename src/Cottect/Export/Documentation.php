@@ -8,7 +8,7 @@ use Cottect\Api\ApiCollection;
 use Cottect\Api\ApiResource;
 
 use Cottect\Mvc\Plugin;
-use PhalconRest\Transformers\ModelTransformer;
+use Cottect\Transformers\ModelTransformer;
 
 class Documentation extends Plugin
 {

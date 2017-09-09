@@ -3,7 +3,7 @@
 namespace Cottect\Transformers\Postman;
 
 use Cottect\Export\Postman\Request as PostmanRequest;
-use PhalconRest\Transformers\Transformer;
+use Cottect\Transformers\Transformer;
 
 class RequestTransformer extends Transformer
 {

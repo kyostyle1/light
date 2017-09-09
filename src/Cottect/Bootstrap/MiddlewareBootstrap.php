@@ -9,7 +9,7 @@ use Cottect\Middleware\AuthenticationMiddleware;
 use Cottect\Middleware\AuthorizationMiddleware;
 use Cottect\Middleware\UrlQueryMiddleware;
 
-use PhalconRest\Middleware\FractalMiddleware;
+use Cottect\Middleware\FractalMiddleware;
 
 use PhalconApi\Middleware\CorsMiddleware;
 use PhalconApi\Middleware\NotFoundMiddleware;

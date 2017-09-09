@@ -3,7 +3,7 @@
 namespace Cottect\Transformers\Documentation;
 
 use Phalcon\Mvc\Router\Route;
-use PhalconRest\Transformers\Transformer;
+use Cottect\Transformers\Transformer;
 
 class RouteTransformer extends Transformer
 {

@@ -3,7 +3,7 @@
 namespace Cottect\Transformers\Postman;
 
 use Cottect\Export\Postman\ApiCollection as PostmanCollection;
-use PhalconRest\Transformers\Transformer;
+use Cottect\Transformers\Transformer;
 
 class ApiCollectionTransformer extends Transformer
 {

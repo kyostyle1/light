@@ -3,7 +3,7 @@
 namespace Cottect\Transformers\Documentation;
 
 use Cottect\Export\Documentation\ApiEndpoint as DocumentationEndpoint;
-use PhalconRest\Transformers\Transformer;
+use Cottect\Transformers\Transformer;
 
 class ApiEndpointTransformer extends Transformer
 {

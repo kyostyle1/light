@@ -3,7 +3,7 @@
 namespace Cottect\Transformers\Documentation;
 
 use Cottect\Export\Documentation\ApiCollection as DocumentationCollection;
-use PhalconRest\Transformers\Transformer;
+use Cottect\Transformers\Transformer;
 
 class ApiCollectionTransformer extends Transformer
 {

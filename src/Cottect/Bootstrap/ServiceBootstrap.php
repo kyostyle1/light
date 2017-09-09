@@ -114,7 +114,7 @@ class ServiceBootstrap implements BootstrapInterface
         });
 
         /**
-         * @description PhalconRest - \League\Fractal\Manager
+         * @description Cottect - \League\Fractal\Manager
          */
         $di->setShared(Services::FRACTAL_MANAGER, function () {
 
@@ -125,7 +125,7 @@ class ServiceBootstrap implements BootstrapInterface
         });
 
         /**
-         * @description PhalconRest - \PhalconRest\User\Service
+         * @description Cottect - \Cottect\User\Service
          */
         $di->setShared(Services::USER_SERVICE, new Service());
 

@@ -5,8 +5,7 @@ namespace Cottect\Transformers;
 use Cottect\Transformers\Documentation\ApiCollectionTransformer;
 use Cottect\Export\Documentation;
 
-use PhalconRest\Transformers\Documentation\RouteTransformer;
-use PhalconRest\Transformers\Transformer;
+use Cottect\Transformers\Documentation\RouteTransformer;
 
 class DocumentationTransformer extends Transformer
 {

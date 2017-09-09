@@ -6,7 +6,7 @@ use Phalcon\Di;
 use PhalconApi\Exception;
 
 /**
- * @property \PhalconRest\Api $application
+ * @property \Cottect\Api $application
  * @property \PhalconApi\Http\Request $request
  * @property \PhalconApi\Http\Response $response
  * @property \Phalcon\Acl\AdapterInterface $acl
@@ -16,7 +16,7 @@ use PhalconApi\Exception;
  * @property \PhalconApi\Helpers\FormatHelper $formatHelper
  * @property \PhalconApi\Auth\TokenParserInterface $tokenParser
  * @property \PhalconApi\Data\Query $query
- * @property \PhalconRest\QueryParsers\PhqlQueryParser $phqlQueryParser
+ * @property \Cottect\QueryParsers\PhqlQueryParser $phqlQueryParser
  * @property \PhalconApi\Data\Query\QueryParsers\UrlQueryParser $urlQueryParser
  *
  * @property \Phalcon\Mvc\Dispatcher|\Phalcon\Mvc\DispatcherInterface $dispatcher;

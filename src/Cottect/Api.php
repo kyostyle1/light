@@ -10,9 +10,6 @@ use Phalcon\Mvc\Micro\CollectionInterface;
 use PhalconApi\Exception;
 
 /**
- * Class Api
- * @package Cottect extends PhalconRest
- *
  * @property \Cottect\QueryParsers\PhqlQueryParser $phqlQueryParser
  */
 class Api extends \PhalconApi\Api

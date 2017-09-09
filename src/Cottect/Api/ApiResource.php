@@ -5,7 +5,7 @@ namespace Cottect\Api;
 use Cottect\Mvc\Controllers\CrudResourceController;
 use Cottect\Constants\Services;
 
-use PhalconRest\Transformers\ModelTransformer;
+use Cottect\Transformers\ModelTransformer;
 
 use Phalcon\Di;
 use Phalcon\Mvc\Micro\CollectionInterface;
