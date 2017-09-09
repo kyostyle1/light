@@ -20,4 +20,4 @@ If you discover a security vulnerability within Cottect, please send an e-mail t
 
 ## License
 
-The Cottect is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The Cottect is open-sourced software licensed under the [GPL license](https://www.gnu.org/licenses/gpl-3.0.en.html).

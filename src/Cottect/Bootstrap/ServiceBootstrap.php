@@ -141,15 +141,6 @@ class ServiceBootstrap implements BootstrapInterface
         });
 
         /**
-         * @description PHPExcel - OpenXML - Read, Write and Create spreadsheet documents in PHP - Spreadsheet engine
-         * @link https://github.com/PHPOffice/PHPExcel
-         */
-        $di->setShared(Services::PHP_EXCEL, function() use ($di, $config){
-            $objPHPExcel = new PHPExcel();
-            return $objPHPExcel;
-        });
-
-        /**
          * Caching with redis
          */
         $di->setShared(Services::REDIS, function () use ($config) {

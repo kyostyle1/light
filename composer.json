@@ -11,14 +11,7 @@
     "guzzlehttp/guzzle": "^6.3",
     "michelf/php-markdown": "^1.7",
     "league/fractal": "^0.13.0",
-    "firebase/php-jwt": "^3.0",
-    "phpoffice/phpexcel": "^1.8"
+    "firebase/php-jwt": "^3.0"
   },
-  "license": "GPL",
-  "authors": [
-    {
-      "name": "Nhat Bang Dinh",
-      "email": "nhatbang.dinh@cottect.com"
-    }
-  ]
+  "license": "GPL"
 }
