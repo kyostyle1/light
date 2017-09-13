@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Mvc;
+namespace Cottect;
 
 /**
  * @property \Cottect\Api $application
@@ -11,11 +11,11 @@ namespace Cottect\Mvc;
  * @property \Cottect\Http\Response $response
  * @property \Cottect\Helpers\ErrorHelper $errorHelper
  * @property \Cottect\Helpers\FormatHelper $formatHelper
- *
+
  * @property \Phalcon\Acl\AdapterInterface $acl
  */
 
-class Controller extends \PhalconApi\Mvc\Controller
+class Controller extends \Phalcon\Mvc\Controller
 {
 
 }

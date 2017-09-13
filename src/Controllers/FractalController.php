@@ -1,8 +1,8 @@
 <?php
 
-namespace Cottect\Mvc\Controllers;
+namespace Cottect\Controllers;
 
-use Cottect\Mvc\Controller;
+use Cottect\Controller;
 
 use League\Fractal\Resource\Collection;
 use League\Fractal\Resource\Item;
@@ -16,16 +16,6 @@ class FractalController extends Controller
     public function onConstruct()
     {
         $this->fractal = $this->di->get(Services::FRACTAL_MANAGER);
-    }
-
-    protected function getUser()
-    {
-        return $this->userService->getDetails();
-    }
-
-    protected function getUserId()
-    {
-        return (int)$this->userService->getIdentity();
     }
 
     protected function createArrayResponse($array, $key)

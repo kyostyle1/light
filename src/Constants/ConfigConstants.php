@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: BangDinh
- * Date: 7/30/17
- * Time: 22:11
- */
 
 namespace Cottect\Constants;
 

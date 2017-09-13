@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Mvc\Controllers;
+namespace Cottect\Controllers;
 
 class CollectionController extends FractalController
 {
@@ -18,7 +18,6 @@ class CollectionController extends FractalController
         if (!$this->_collection) {
             $this->_collection = $this->application->getMatchedCollection();
         }
-
         return $this->_collection;
     }
 
@@ -30,7 +29,6 @@ class CollectionController extends FractalController
         if (!$this->_endpoint) {
             $this->_endpoint = $this->application->getMatchedEndpoint();
         }
-
         return $this->_endpoint;
     }
 }

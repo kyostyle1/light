@@ -2,11 +2,12 @@
 
 namespace Cottect\Middleware;
 
+use Cottect\Plugin;
 use Cottect\Data\Query;
+use Cottect\Constants\Services;
+
 use Phalcon\Mvc\Micro;
 use Phalcon\Mvc\Micro\MiddlewareInterface;
-use PhalconApi\Constants\Services;
-use PhalconApi\Mvc\Plugin;
 
 class UrlQueryMiddleware extends Plugin implements MiddlewareInterface
 {
@@ -16,7 +17,7 @@ class UrlQueryMiddleware extends Plugin implements MiddlewareInterface
         $query = $this->getDI()->get(Services::URL_QUERY_PARSER)->createQuery($params);
         /** @var Query $queryService */
         $queryService  = $this->getDI()->get(Services::QUERY);
-        $queryService->mergeQuery($query);
+        $queryService->merge($query);
     }
 
     public function call(Micro $api)

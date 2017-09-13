@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Mvc\Controllers;
+namespace Cottect\Controllers;
 
 use Cottect\Api\ApiResource as ApiResource;
 use Cottect\Transformers\ModelTransformer;

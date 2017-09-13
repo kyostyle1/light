@@ -2,14 +2,13 @@
 
 namespace Cottect\Api;
 
-use Cottect\Mvc\Controllers\CrudResourceController;
 use Cottect\Constants\Services;
-
 use Cottect\Transformers\ModelTransformer;
+use Cottect\Mvc\Controllers\CrudResourceController;
 
 use Phalcon\Di;
-use Phalcon\Mvc\Micro\CollectionInterface;
 use PhalconApi\Acl\MountableInterface;
+use Phalcon\Mvc\Micro\CollectionInterface;
 
 class ApiResource extends ApiCollection implements MountableInterface, CollectionInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Mvc;
+namespace Cottect;
 
 /**
  *
@@ -12,16 +12,14 @@ namespace Cottect\Mvc;
  * @property \Cottect\Http\Request $request
  * @property \Cottect\Http\Response $response
  * @property \Phalcon\Acl\AdapterInterface $acl
- * @property \Cottect\Auth\Manager $authManager
- * @property \Cottect\User\Service $userService
  * @property \Cottect\Helpers\ErrorHelper $errorHelper
  * @property \Cottect\Helpers\FormatHelper $formatHelper
- * @property \Cottect\Auth\TokenParserInterface $tokenParser
  * @property \Cottect\Data\Query $query
  * @property \Cottect\Data\Query\UrlQueryParser $urlQueryParser
  */
+use \Phalcon\Di\Injectable;
 
-class Plugin extends \Phalcon\Mvc\User\Plugin
+class Plugin extends Injectable
 {
 
 }

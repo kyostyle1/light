@@ -1,9 +1,9 @@
 <?php
-namespace Cottect\Mvc\Controllers;
+namespace Cottect\Controllers;
 
-use PhalconApi\Constants\ErrorCodes;
-use PhalconApi\Constants\PostedDataMethods;
-use PhalconApi\Exception;
+use Cottect\Constants\ErrorCodes;
+use Cottect\Constants\PostedDataMethods;
+use Cottect\Exception;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Mvc\Model\Query\Builder as QueryBuilder;
