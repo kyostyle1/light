@@ -4,9 +4,8 @@ namespace Cottect\Api;
 
 use Michelf\MarkdownExtra;
 
-use PhalconApi\Constants\HttpMethods;
-use PhalconApi\Constants\PostedDataMethods;
-use PhalconApi\Core;
+use Cottect\Constants\HttpMethods;
+use Cottect\Constants\PostedDataMethods;
 
 class ApiEndpoint
 {

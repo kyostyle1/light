@@ -7,21 +7,19 @@ use Cottect\Api\ApiEndpoint;
 use Cottect\Api\ApiResource;
 use Cottect\Constants\Services;
 
+use Phalcon\Mvc\Micro;
 use Phalcon\Mvc\Micro\CollectionInterface;
 
 /**
  * @property \Cottect\QueryParsers\PhqlQueryParser $phqlQueryParser
- * @property \PhalconApi\Api $application
- * @property \PhalconApi\Http\Request $request
- * @property \PhalconApi\Http\Response $response
+ * @property \Cottect\Api $application
+ * @property \Cottect\Http\Request $request
+ * @property \Cottect\Http\Response $response
+ * @property \Cottect\Data\Query $query
+ * @property \Cottect\Data\Query\UrlQueryParser $urlQueryParser
  * @property \Phalcon\Acl\AdapterInterface $acl
- * @property \PhalconApi\Auth\Manager $authManager
- * @property \PhalconApi\User\Service $userService
- * @property \PhalconApi\Auth\TokenParserInterface $tokenParser
- * @property \PhalconApi\Data\Query $query
- * @property \PhalconApi\Data\Query\QueryParsers\UrlQueryParser $urlQueryParser
  */
-class Api extends \PhalconApi\Api
+class Api extends Micro
 {
     protected $matchedRouteNameParts = null;
     protected $collectionsByIdentifier = [];
@@ -77,8 +75,6 @@ class Api extends \PhalconApi\Api
                 $this->endpointsByIdentifier[$fullIdentifier] = $endpoint;
             }
         }
-
-        return parent::mount($collection);
     }
 
     /**

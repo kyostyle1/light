@@ -3,21 +3,21 @@
 namespace Cottect\Transformers;
 
 use Phalcon\Di;
-use PhalconApi\Exception;
+use Cottect\Exception;
 
 /**
  * @property \Cottect\Api $application
- * @property \PhalconApi\Http\Request $request
- * @property \PhalconApi\Http\Response $response
+ * @property \Cottect\Http\Request $request
+ * @property \Cottect\Http\Response $response
  * @property \Phalcon\Acl\AdapterInterface $acl
- * @property \PhalconApi\Auth\Manager $authManager
- * @property \PhalconApi\User\Service $userService
- * @property \PhalconApi\Helpers\ErrorHelper $errorHelper
- * @property \PhalconApi\Helpers\FormatHelper $formatHelper
- * @property \PhalconApi\Auth\TokenParserInterface $tokenParser
- * @property \PhalconApi\Data\Query $query
+ * @property \Cottect\Auth\Manager $authManager
+ * @property \Cottect\User\Service $userService
+ * @property \Cottect\Helpers\ErrorHelper $errorHelper
+ * @property \Cottect\Helpers\FormatHelper $formatHelper
+ * @property \Cottect\Auth\TokenParserInterface $tokenParser
+ * @property \Cottect\Data\Query $query
  * @property \Cottect\QueryParsers\PhqlQueryParser $phqlQueryParser
- * @property \PhalconApi\Data\Query\QueryParsers\UrlQueryParser $urlQueryParser
+ * @property \Cottect\Data\Query\QueryParsers\UrlQueryParser $urlQueryParser
  *
  * @property \Phalcon\Mvc\Dispatcher|\Phalcon\Mvc\DispatcherInterface $dispatcher;
  * @property \Phalcon\Mvc\Router|\Phalcon\Mvc\RouterInterface $router

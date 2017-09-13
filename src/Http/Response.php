@@ -12,7 +12,7 @@ class Response extends \Phalcon\Http\Response
         /** @var Request $request */
         $request = $this->getDI()->get(Services::REQUEST);
 
-        /** @var \PhalconApi\Helpers\ErrorHelper $errorHelper */
+        /** @var \Cottect\Helpers\ErrorHelper $errorHelper */
         $errorHelper = $this->getDI()->has(Services::ERROR_HELPER) ? $this->getDI()->get(Services::ERROR_HELPER) : null;
 
         $errorCode = $e->getCode();

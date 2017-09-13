@@ -11,7 +11,6 @@ namespace Cottect;
  * @property \Cottect\Http\Response $response
  * @property \Cottect\Helpers\ErrorHelper $errorHelper
  * @property \Cottect\Helpers\FormatHelper $formatHelper
-
  * @property \Phalcon\Acl\AdapterInterface $acl
  */
 
