@@ -2,6 +2,8 @@
 
 namespace Cottect\Light;
 
+use \Phalcon\Di\Injectable;
+
 /**
  *
  * Cottect\Light\Mvc\Plugin
@@ -17,8 +19,6 @@ namespace Cottect\Light;
  * @property \Cottect\Light\Data\Query $query
  * @property \Cottect\Light\Data\Query\UrlQueryParser $urlQueryParser
  */
-use \Phalcon\Di\Injectable;
-
 class Plugin extends Injectable
 {
 
