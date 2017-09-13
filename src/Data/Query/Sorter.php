@@ -1,6 +1,6 @@
 <?php
 
-namespace Light\Data\Query;
+namespace Cottect\Light\Data\Query;
 
 class Sorter
 {

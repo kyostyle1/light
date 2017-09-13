@@ -1,14 +1,14 @@
 <?php
 
-namespace Light\Bootstrap;
+namespace Cottect\Light\Bootstrap;
 
-use Light\Api;
-use Light\Data\Query;
-use Light\Constants\Services;
-use Light\BootstrapInterface;
-use Light\Fractal\CustomSerializer;
-use Light\Constants\ConfigConstants;
-use Light\Data\Query\UrlQueryParser;
+use Cottect\Light\Api;
+use Cottect\Light\Data\Query;
+use Cottect\Light\Constants\Services;
+use Cottect\Light\BootstrapInterface;
+use Cottect\Light\Fractal\CustomSerializer;
+use Cottect\Light\Constants\ConfigConstants;
+use Cottect\Light\Data\Query\UrlQueryParser;
 
 use Phalcon\Config;
 use Phalcon\DiInterface;
@@ -90,7 +90,7 @@ class ServiceBootstrap implements BootstrapInterface
         });
 
         /**
-         * @description Light - \League\Fractal\Manager
+         * @description Cottect\Light - \League\Fractal\Manager
          */
         $di->setShared(Services::FRACTAL_MANAGER, function () {
             $fractal = new FractalManager;

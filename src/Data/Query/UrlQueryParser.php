@@ -1,8 +1,8 @@
 <?php
 
-namespace Light\Data\Query;
+namespace Cottect\Light\Data\Query;
 
-use Light\Data\Query;
+use Cottect\Light\Data\Query;
 
 class UrlQueryParser
 {

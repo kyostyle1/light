@@ -1,12 +1,12 @@
 <?php
 
-namespace Light\Controllers;
+namespace Cottect\Light\Controllers;
 
-use Light\Controller;
+use Cottect\Light\Controller;
 
 use League\Fractal\Resource\Collection;
 use League\Fractal\Resource\Item;
-use Light\Constants\Services;
+use Cottect\Light\Constants\Services;
 
 class FractalController extends Controller
 {

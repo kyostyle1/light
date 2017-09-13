@@ -1,17 +1,17 @@
 <?php
 
-namespace Light\Controllers;
+namespace Cottect\Light\Controllers;
 
 class CollectionController extends FractalController
 {
-    /** @var \Light\Api\ApiCollection */
+    /** @var \Cottect\Light\Api\ApiCollection */
     protected $_collection;
 
-    /** @var \Light\Api\ApiEndpoint */
+    /** @var \Cottect\Light\Api\ApiEndpoint */
     protected $_endpoint;
 
     /**
-     * @return \Light\Api\ApiCollection
+     * @return \Cottect\Light\Api\ApiCollection
      */
     public function getCollection()
     {
@@ -22,7 +22,7 @@ class CollectionController extends FractalController
     }
 
     /**
-     * @return \Light\Api\ApiEndpoint
+     * @return \Cottect\Light\Api\ApiEndpoint
      */
     public function getEndpoint()
     {

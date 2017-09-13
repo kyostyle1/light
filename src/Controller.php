@@ -1,16 +1,16 @@
 <?php
 
-namespace Light;
+namespace Cottect\Light;
 
 /**
- * @property \Light\Api $application
- * @property \Light\QueryParsers\PhqlQueryParser $phqlQueryParser
- * @property \Light\Data\Query $query
- * @property \Light\Data\Query\UrlQueryParser $urlQueryParser
- * @property \Light\Http\Request $request
- * @property \Light\Http\Response $response
- * @property \Light\Helpers\ErrorHelper $errorHelper
- * @property \Light\Helpers\FormatHelper $formatHelper
+ * @property \Cottect\Light\Api $application
+ * @property \Cottect\Light\QueryParsers\PhqlQueryParser $phqlQueryParser
+ * @property \Cottect\Light\Data\Query $query
+ * @property \Cottect\Light\Data\Query\UrlQueryParser $urlQueryParser
+ * @property \Cottect\Light\Http\Request $request
+ * @property \Cottect\Light\Http\Response $response
+ * @property \Cottect\Light\Helpers\ErrorHelper $errorHelper
+ * @property \Cottect\Light\Helpers\FormatHelper $formatHelper
  * @property \Phalcon\Acl\AdapterInterface $acl
  */
 

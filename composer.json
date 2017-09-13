@@ -3,7 +3,7 @@
   "description": "Cottect Light Phalcon API",
   "autoload": {
     "psr-4": {
-      "Light\\": "src/"
+      "Cottect\\Light\\": "src/"
     }
   },
   "require": {

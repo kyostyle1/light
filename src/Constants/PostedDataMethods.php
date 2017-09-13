@@ -1,6 +1,6 @@
 <?php
 
-namespace Light\Constants;
+namespace Cottect\Light\Constants;
 
 class PostedDataMethods
 {

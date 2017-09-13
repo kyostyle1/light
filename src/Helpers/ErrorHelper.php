@@ -1,8 +1,8 @@
 <?php
 
-namespace Light\Helpers;
+namespace Cottect\Light\Helpers;
 
-use Light\Constants\ErrorCodes;
+use Cottect\Light\Constants\ErrorCodes;
 
 class ErrorHelper
 {

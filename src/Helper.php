@@ -1,6 +1,6 @@
 <?php
 
-namespace Light;
+namespace Cottect\Light;
 
 class Helper
 {

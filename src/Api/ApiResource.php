@@ -1,10 +1,10 @@
 <?php
 
-namespace Light\Api;
+namespace Cottect\Light\Api;
 
-use Light\Constants\Services;
-use Light\Transformers\ModelTransformer;
-use Light\Controllers\CrudResourceController;
+use Cottect\Light\Constants\Services;
+use Cottect\Light\Transformers\ModelTransformer;
+use Cottect\Light\Controllers\CrudResourceController;
 
 use Phalcon\Di;
 use Phalcon\Mvc\Micro\CollectionInterface;

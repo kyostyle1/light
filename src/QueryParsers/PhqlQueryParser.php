@@ -1,12 +1,12 @@
 <?php
 
-namespace Light\QueryParsers;
+namespace Cottect\Light\QueryParsers;
 
-use Light\Plugin;
-use Light\Data\Query;
-use Light\Data\Query\Sorter;
-use Light\Data\Query\Condition;
-use Light\Api\ApiResource as ApiResource;
+use Cottect\Light\Plugin;
+use Cottect\Light\Data\Query;
+use Cottect\Light\Data\Query\Sorter;
+use Cottect\Light\Data\Query\Condition;
+use Cottect\Light\Api\ApiResource as ApiResource;
 
 use Phalcon\Mvc\Model\Query\Builder;
 

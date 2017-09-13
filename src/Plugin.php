@@ -1,21 +1,21 @@
 <?php
 
-namespace Light;
+namespace Cottect\Light;
 
 /**
  *
- * Light\Mvc\Plugin
+ * Cottect\Light\Mvc\Plugin
  * This class allows to access services in the services container by just only accessing a public property
  * with the same name of a registered service
  *
- * @property \Light\Api $application
- * @property \Light\Http\Request $request
- * @property \Light\Http\Response $response
+ * @property \Cottect\Light\Api $application
+ * @property \Cottect\Light\Http\Request $request
+ * @property \Cottect\Light\Http\Response $response
  * @property \Phalcon\Acl\AdapterInterface $acl
- * @property \Light\Helpers\ErrorHelper $errorHelper
- * @property \Light\Helpers\FormatHelper $formatHelper
- * @property \Light\Data\Query $query
- * @property \Light\Data\Query\UrlQueryParser $urlQueryParser
+ * @property \Cottect\Light\Helpers\ErrorHelper $errorHelper
+ * @property \Cottect\Light\Helpers\FormatHelper $formatHelper
+ * @property \Cottect\Light\Data\Query $query
+ * @property \Cottect\Light\Data\Query\UrlQueryParser $urlQueryParser
  */
 use \Phalcon\Di\Injectable;
 

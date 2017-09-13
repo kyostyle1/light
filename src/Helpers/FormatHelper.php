@@ -1,6 +1,6 @@
 <?php
 
-namespace Light\Helpers;
+namespace Cottect\Light\Helpers;
 
 class FormatHelper
 {

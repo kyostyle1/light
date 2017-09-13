@@ -1,9 +1,9 @@
 <?php
-namespace Light\Controllers;
+namespace Cottect\Light\Controllers;
 
-use Light\Constants\ErrorCodes;
-use Light\Constants\PostedDataMethods;
-use Light\Exception;
+use Cottect\Light\Constants\ErrorCodes;
+use Cottect\Light\Constants\PostedDataMethods;
+use Cottect\Light\Exception;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Mvc\Model\Query\Builder as QueryBuilder;

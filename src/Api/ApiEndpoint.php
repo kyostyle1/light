@@ -1,9 +1,9 @@
 <?php
 
-namespace Light\Api;
+namespace Cottect\Light\Api;
 
-use Light\Constants\HttpMethods;
-use Light\Constants\PostedDataMethods;
+use Cottect\Light\Constants\HttpMethods;
+use Cottect\Light\Constants\PostedDataMethods;
 
 class ApiEndpoint
 {

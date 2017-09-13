@@ -1,22 +1,22 @@
 <?php
 
-namespace Light\Transformers;
+namespace Cottect\Light\Transformers;
 
-use Light\Exception;
+use Cottect\Light\Exception;
 
 use Phalcon\Di;
 
 use League\Fractal\TransformerAbstract;
 
 /**
- * @property \Light\Api $application
- * @property \Light\Http\Request $request
- * @property \Light\Http\Response $response
+ * @property \Cottect\Light\Api $application
+ * @property \Cottect\Light\Http\Request $request
+ * @property \Cottect\Light\Http\Response $response
  * @property \Phalcon\Acl\AdapterInterface $acl
- * @property \Light\Helpers\ErrorHelper $errorHelper
- * @property \Light\Helpers\FormatHelper $formatHelper
- * @property \Light\Data\Query $query
- * @property \Light\QueryParsers\PhqlQueryParser $phqlQueryParser
+ * @property \Cottect\Light\Helpers\ErrorHelper $errorHelper
+ * @property \Cottect\Light\Helpers\FormatHelper $formatHelper
+ * @property \Cottect\Light\Data\Query $query
+ * @property \Cottect\Light\QueryParsers\PhqlQueryParser $phqlQueryParser
  * @property \Phalcon\Mvc\Dispatcher|\Phalcon\Mvc\DispatcherInterface $dispatcher;
  * @property \Phalcon\Mvc\Router|\Phalcon\Mvc\RouterInterface $router
  * @property \Phalcon\Mvc\Url|\Phalcon\Mvc\UrlInterface $url

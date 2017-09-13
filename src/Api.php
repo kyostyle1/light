@@ -1,22 +1,22 @@
 <?php
 
-namespace Light;
+namespace Cottect\Light;
 
-use Light\Api\ApiCollection;
-use Light\Api\ApiEndpoint;
-use Light\Api\ApiResource;
-use Light\Constants\Services;
+use Cottect\Light\Api\ApiCollection;
+use Cottect\Light\Api\ApiEndpoint;
+use Cottect\Light\Api\ApiResource;
+use Cottect\Light\Constants\Services;
 
 use Phalcon\Mvc\Micro;
 use Phalcon\Mvc\Micro\CollectionInterface;
 
 /**
- * @property \Light\QueryParsers\PhqlQueryParser $phqlQueryParser
- * @property \Light\Api $application
- * @property \Light\Http\Request $request
- * @property \Light\Http\Response $response
- * @property \Light\Data\Query $query
- * @property \Light\Data\Query\UrlQueryParser $urlQueryParser
+ * @property \Cottect\Light\QueryParsers\PhqlQueryParser $phqlQueryParser
+ * @property \Cottect\Light\Api $application
+ * @property \Cottect\Light\Http\Request $request
+ * @property \Cottect\Light\Http\Response $response
+ * @property \Cottect\Light\Data\Query $query
+ * @property \Cottect\Light\Data\Query\UrlQueryParser $urlQueryParser
  * @property \Phalcon\Acl\AdapterInterface $acl
  */
 class Api extends Micro
@@ -91,7 +91,7 @@ class Api extends Micro
     }
 
     /**
-     * @return \Light\Api\ApiCollection|null  The matched collection
+     * @return \Cottect\Light\Api\ApiCollection|null  The matched collection
      */
     public function getMatchedCollection()
     {
@@ -126,7 +126,7 @@ class Api extends Micro
     }
 
     /**
-     * @return \Light\Api\ApiEndpoint|null  The matched endpoint
+     * @return \Cottect\Light\Api\ApiEndpoint|null  The matched endpoint
      */
     public function getMatchedEndpoint()
     {
