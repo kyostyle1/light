@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Constants;
+namespace Light\Constants;
 
 class ConfigConstants
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Transformers;
+namespace Light\Transformers;
 
 use Phalcon\Db\Column;
 

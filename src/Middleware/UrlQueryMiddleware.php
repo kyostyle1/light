@@ -1,10 +1,10 @@
 <?php
 
-namespace Cottect\Middleware;
+namespace Light\Middleware;
 
-use Cottect\Plugin;
-use Cottect\Data\Query;
-use Cottect\Constants\Services;
+use Light\Plugin;
+use Light\Data\Query;
+use Light\Constants\Services;
 
 use Phalcon\Mvc\Micro;
 use Phalcon\Mvc\Micro\MiddlewareInterface;

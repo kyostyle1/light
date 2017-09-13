@@ -1,9 +1,9 @@
 <?php
 
-namespace Cottect\Http;
+namespace Light\Http;
 
-use Cottect\Exception;
-use Cottect\Constants\Services;
+use Light\Exception;
+use Light\Constants\Services;
 
 class Response extends \Phalcon\Http\Response
 {
@@ -12,7 +12,7 @@ class Response extends \Phalcon\Http\Response
         /** @var Request $request */
         $request = $this->getDI()->get(Services::REQUEST);
 
-        /** @var \Cottect\Helpers\ErrorHelper $errorHelper */
+        /** @var \Light\Helpers\ErrorHelper $errorHelper */
         $errorHelper = $this->getDI()->has(Services::ERROR_HELPER) ? $this->getDI()->get(Services::ERROR_HELPER) : null;
 
         $errorCode = $e->getCode();

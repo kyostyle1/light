@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect;
+namespace Light;
 
 class Exception extends \Exception
 {

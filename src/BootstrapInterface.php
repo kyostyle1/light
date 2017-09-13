@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect;
+namespace Light;
 
 use Phalcon\Config;
 use Phalcon\DiInterface;

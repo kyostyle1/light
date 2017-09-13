@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Data\Query;
+namespace Light\Data\Query;
 
 class Condition
 {

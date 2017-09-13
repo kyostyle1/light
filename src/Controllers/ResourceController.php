@@ -1,9 +1,9 @@
 <?php
 
-namespace Cottect\Controllers;
+namespace Light\Controllers;
 
-use Cottect\Transformers\ModelTransformer;
-use Cottect\Api\ApiResource as ApiResource;
+use Light\Transformers\ModelTransformer;
+use Light\Api\ApiResource as ApiResource;
 
 class ResourceController extends CollectionController
 {

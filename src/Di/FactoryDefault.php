@@ -1,17 +1,17 @@
 <?php
 
-namespace Cottect\Di;
+namespace Light\Di;
 
-use Cottect\Exception;
-use Cottect\Data\Query;
-use Cottect\Http\Request;
-use Cottect\Http\Response;
-use Cottect\Constants\Services;
-use Cottect\Helpers\ErrorHelper;
-use Cottect\Constants\ErrorCodes;
-use Cottect\Helpers\FormatHelper;
-use Cottect\Data\Query\UrlQueryParser;
-use Cottect\QueryParsers\PhqlQueryParser;
+use Light\Exception;
+use Light\Data\Query;
+use Light\Http\Request;
+use Light\Http\Response;
+use Light\Constants\Services;
+use Light\Helpers\ErrorHelper;
+use Light\Constants\ErrorCodes;
+use Light\Helpers\FormatHelper;
+use Light\Data\Query\UrlQueryParser;
+use Light\QueryParsers\PhqlQueryParser;
 
 class FactoryDefault extends \Phalcon\Di\FactoryDefault
 {

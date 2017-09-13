@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Http;
+namespace Light\Http;
 
 use GuzzleHttp;
 use GuzzleHttp\Exception\RequestException;

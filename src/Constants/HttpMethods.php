@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Constants;
+namespace Light\Constants;
 
 class HttpMethods
 {
@@ -11,6 +11,5 @@ class HttpMethods
     const HEAD = "HEAD";
     const OPTIONS = "OPTIONS";
     const PATCH = "PATCH";
-
     static $ALL_METHODS = [self::GET, self::POST, self::PUT, self::DELETE, self::HEAD, self::OPTIONS, self::PATCH];
 }

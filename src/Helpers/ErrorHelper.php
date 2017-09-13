@@ -1,8 +1,8 @@
 <?php
 
-namespace Cottect\Helpers;
+namespace Light\Helpers;
 
-use Cottect\Constants\ErrorCodes;
+use Light\Constants\ErrorCodes;
 
 class ErrorHelper
 {
@@ -40,12 +40,12 @@ class ErrorHelper
 
         ErrorCodes::POST_DATA_NOT_PROVIDED => [
             'statusCode' => 400,
-            'message' => 'Postdata: Not provided'
+            'message' => 'Post data: Not provided'
         ],
 
         ErrorCodes::POST_DATA_INVALID => [
             'statusCode' => 400,
-            'message' => 'Postdata: Invalid'
+            'message' => 'Post data: Invalid'
         ]
     ];
 

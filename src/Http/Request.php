@@ -1,8 +1,8 @@
 <?php
 
-namespace Cottect\Http;
+namespace Light\Http;
 
-use Cottect\Constants\PostedDataMethods;
+use Light\Constants\PostedDataMethods;
 
 class Request extends \Phalcon\Http\Request
 {

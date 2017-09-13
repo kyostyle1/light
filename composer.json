@@ -1,9 +1,9 @@
 {
-  "name": "cottect/api",
-  "description": "Cottect Phalcon API",
+  "name": "cottect/light",
+  "description": "Cottect Light Phalcon API",
   "autoload": {
     "psr-4": {
-      "Cottect\\Api\\": "src"
+      "Light\\": "src/"
     }
   },
   "require": {

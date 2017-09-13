@@ -1,11 +1,11 @@
 <?php
 
-namespace Cottect\Api;
+namespace Light\Api;
 
-use Cottect\Exception;
-use Cottect\Constants\ErrorCodes;
-use Cottect\Constants\HttpMethods;
-use Cottect\Constants\PostedDataMethods;
+use Light\Exception;
+use Light\Constants\ErrorCodes;
+use Light\Constants\HttpMethods;
+use Light\Constants\PostedDataMethods;
 
 use Phalcon\Mvc\Micro\Collection;
 use Phalcon\Mvc\Micro\CollectionInterface;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Cottect\Middleware;
+namespace Light\Middleware;
 
-use Cottect\Plugin;
-use Cottect\Constants\Services;
+use Light\Plugin;
+use Light\Constants\Services;
 
 use Phalcon\Mvc\Micro;
 use Phalcon\Mvc\Micro\MiddlewareInterface;

@@ -1,11 +1,9 @@
 <?php
 
-namespace Cottect\Api;
+namespace Light\Api;
 
-use Michelf\MarkdownExtra;
-
-use Cottect\Constants\HttpMethods;
-use Cottect\Constants\PostedDataMethods;
+use Light\Constants\HttpMethods;
+use Light\Constants\PostedDataMethods;
 
 class ApiEndpoint
 {
@@ -23,9 +21,6 @@ class ApiEndpoint
     protected $handlerMethod;
 
     protected $postedDataMethod = PostedDataMethods::AUTO;
-    protected $exampleResponse;
-    protected $exampleHeaders;
-    protected $exampleParameters;
 
     public function __construct($path, $httpMethod = HttpMethods::GET, $handlerMethod = null)
     {
@@ -278,63 +273,6 @@ class ApiEndpoint
     public function getDescription()
     {
         return $this->description;
-    }
-
-    /**
-     * @param string $exampleResponse Example of the response of the endpoint
-     *
-     * @return $this
-     */
-    public function exampleResponse($exampleResponse)
-    {
-        $this->exampleResponse = MarkdownExtra::defaultTransform($exampleResponse);
-        return $this;
-    }
-
-    /**
-     * @return string Example of the response of the endpoint
-     */
-    public function getExampleResponse()
-    {
-        return $this->exampleResponse;
-    }
-
-    /**
-     * @param string $exampleParameters Example of the response of the endpoint
-     *
-     * @return $this
-     */
-    public function setExampleParameters($exampleParameters)
-    {
-        $this->exampleParameters = MarkdownExtra::defaultTransform($exampleParameters);
-        return $this;
-    }
-
-    /**
-     * @return string Example of the response of the endpoint
-     */
-    public function getExampleParameters()
-    {
-        return $this->exampleParameters;
-    }
-
-    /**
-     * @param string $exampleHeaders Example of the response of the endpoint
-     *
-     * @return $this
-     */
-    public function setExampleHeaders($exampleHeaders)
-    {
-        $this->exampleHeaders = MarkdownExtra::defaultTransform($exampleHeaders);
-        return $this;
-    }
-
-    /**
-     * @return string Example of the response of the endpoint
-     */
-    public function getExampleHeaders()
-    {
-        return $this->exampleHeaders;
     }
 
     /**

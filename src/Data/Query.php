@@ -1,9 +1,9 @@
 <?php
 
-namespace Cottect\Data;
+namespace Light\Data;
 
-use Cottect\Data\Query\Sorter;
-use Cottect\Data\Query\Condition;
+use Light\Data\Query\Sorter;
+use Light\Data\Query\Condition;
 
 class Query
 {

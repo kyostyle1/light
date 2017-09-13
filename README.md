@@ -1,1 +1,1 @@
-# Cottect Phalcon API
+# Cottect Light Phalcon API

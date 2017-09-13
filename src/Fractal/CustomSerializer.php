@@ -1,6 +1,6 @@
 <?php
 
-namespace Cottect\Fractal;
+namespace Light\Fractal;
 
 use League\Fractal\Serializer\ArraySerializer;
 
