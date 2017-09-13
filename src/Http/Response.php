@@ -2,8 +2,8 @@
 
 namespace Cottect\Http;
 
-use Cottect\Constants\Services;
 use Cottect\Exception;
+use Cottect\Constants\Services;
 
 class Response extends \Phalcon\Http\Response
 {

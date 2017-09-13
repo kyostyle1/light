@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: BangDinh
- * Date: 7/3/17
- * Time: 11:07
- */
 
 namespace Cottect\Http;
 
 use GuzzleHttp;
 use GuzzleHttp\Exception\RequestException;
+
 use Psr\Http\Message\ResponseInterface;
 
 abstract class BaseHttp

@@ -2,8 +2,8 @@
 
 namespace Cottect\Middleware;
 
+use Cottect\Plugin;
 use Cottect\Constants\Services;
-use Cottect\Mvc\Plugin;
 
 use Phalcon\Mvc\Micro;
 use Phalcon\Mvc\Micro\MiddlewareInterface;

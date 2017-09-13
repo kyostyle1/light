@@ -2,23 +2,21 @@
 
 namespace Cottect\Transformers;
 
-use Phalcon\Di;
 use Cottect\Exception;
+
+use Phalcon\Di;
+
+use League\Fractal\TransformerAbstract;
 
 /**
  * @property \Cottect\Api $application
  * @property \Cottect\Http\Request $request
  * @property \Cottect\Http\Response $response
  * @property \Phalcon\Acl\AdapterInterface $acl
- * @property \Cottect\Auth\Manager $authManager
- * @property \Cottect\User\Service $userService
  * @property \Cottect\Helpers\ErrorHelper $errorHelper
  * @property \Cottect\Helpers\FormatHelper $formatHelper
- * @property \Cottect\Auth\TokenParserInterface $tokenParser
  * @property \Cottect\Data\Query $query
  * @property \Cottect\QueryParsers\PhqlQueryParser $phqlQueryParser
- * @property \Cottect\Data\Query\QueryParsers\UrlQueryParser $urlQueryParser
- *
  * @property \Phalcon\Mvc\Dispatcher|\Phalcon\Mvc\DispatcherInterface $dispatcher;
  * @property \Phalcon\Mvc\Router|\Phalcon\Mvc\RouterInterface $router
  * @property \Phalcon\Mvc\Url|\Phalcon\Mvc\UrlInterface $url
@@ -43,7 +41,7 @@ use Cottect\Exception;
  * @property \Phalcon\Session\Bag $persistent
  * @property \Phalcon\Mvc\View|\Phalcon\Mvc\ViewInterface $view
  */
-class Transformer extends \League\Fractal\TransformerAbstract
+class Transformer extends TransformerAbstract
 {
     /**
      * Dependency Injector
