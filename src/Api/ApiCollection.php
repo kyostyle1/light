@@ -2,24 +2,18 @@
 
 namespace Cottect\Api;
 
-use PhalconApi\Acl\MountableInterface;
-use PhalconApi\Constants\ErrorCodes;
-use PhalconApi\Constants\HttpMethods;
-use PhalconApi\Constants\PostedDataMethods;
-use PhalconApi\Core;
-use PhalconApi\Exception;
+use Cottect\Exception;
+use Cottect\Constants\ErrorCodes;
+use Cottect\Constants\HttpMethods;
+use Cottect\Constants\PostedDataMethods;
 
-use Phalcon\Acl;
-use Phalcon\Mvc\Micro\CollectionInterface;
 use Phalcon\Mvc\Micro\Collection;
+use Phalcon\Mvc\Micro\CollectionInterface;
 
-class ApiCollection extends Collection implements MountableInterface, CollectionInterface
+class ApiCollection extends Collection implements CollectionInterface
 {
     protected $name;
     protected $description;
-
-    protected $allowedRoles = [];
-    protected $deniedRoles = [];
 
     protected $postedDataMethod = PostedDataMethods::AUTO;
 
@@ -239,132 +233,10 @@ class ApiCollection extends Collection implements MountableInterface, Collection
     }
 
     /**
-     * Allows access to this collection for role with the given names. This can be overwritten on the Endpoint level.
-     *
-     * @param ...array $roleNames Names of the roles to allow
-     *
-     * @return static
-     */
-    public function allow()
-    {
-        $roleNames = func_get_args();
-
-        // Flatten array to allow array inputs
-        $roleNames = Core::array_flatten($roleNames);
-
-        foreach ($roleNames as $role) {
-
-            if (!in_array($role, $this->allowedRoles)) {
-                $this->allowedRoles[] = $role;
-            }
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return string[] Array of allowed role-names
-     */
-    public function getAllowedRoles()
-    {
-        return $this->allowedRoles;
-    }
-
-    /***
-     * Denies access to this collection for role with the given names. This can be overwritten on the Endpoint level.
-     *
-     * @param ...array $roleNames Names of the roles to deny
-     *
-     * @return $this
-     */
-    public function deny()
-    {
-        $roleNames = func_get_args();
-
-        // Flatten array to allow array inputs
-        $roleNames = Core::array_flatten($roleNames);
-
-        foreach ($roleNames as $role) {
-
-            if (!in_array($role, $this->deniedRoles)) {
-                $this->deniedRoles[] = $role;
-            }
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return string[] Array of denied role-names
-     */
-    public function getDeniedRoles()
-    {
-        return $this->deniedRoles;
-    }
-
-    public function getAclResources()
-    {
-        $apiEndpointIdentifiers = array_map(function (ApiEndpoint $apiEndpoint) {
-            return $apiEndpoint->getIdentifier();
-        }, $this->endpointsByName);
-
-        return [
-            [new \Phalcon\Acl\Resource($this->getIdentifier(), $this->getName()), $apiEndpointIdentifiers]
-        ];
-    }
-
-    /**
      * @return string|null Name of the collection
      */
     public function getName()
     {
         return $this->name;
-    }
-
-    public function getAclRules(array $roles)
-    {
-        $allowedResponse = [];
-        $deniedResponse = [];
-
-        $defaultAllowedRoles = $this->allowedRoles;
-        $defaultDeniedRoles = $this->deniedRoles;
-
-        foreach ($roles as $role) {
-
-            /** @var ApiEndpoint $apiEndpoint */
-            foreach ($this->endpointsByName as $apiEndpoint) {
-
-                $rule = null;
-
-                if (in_array($role, $defaultAllowedRoles)) {
-                    $rule = true;
-                }
-
-                if (in_array($role, $defaultDeniedRoles)) {
-                    $rule = false;
-                }
-
-                if (in_array($role, $apiEndpoint->getAllowedRoles())) {
-                    $rule = true;
-                }
-
-                if (in_array($role, $apiEndpoint->getDeniedRoles())) {
-                    $rule = false;
-                }
-
-                if ($rule === true) {
-                    $allowedResponse[] = [$role, $this->getIdentifier(), $apiEndpoint->getIdentifier()];
-                }
-
-                if ($rule === false) {
-                    $deniedResponse[] = [$role, $this->getIdentifier(), $apiEndpoint->getIdentifier()];
-                }
-            }
-        }
-
-        return [
-            Acl::ALLOW => $allowedResponse,
-            Acl::DENY => $deniedResponse
-        ];
     }
 }

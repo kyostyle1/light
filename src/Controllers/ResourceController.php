@@ -2,8 +2,8 @@
 
 namespace Cottect\Controllers;
 
-use Cottect\Api\ApiResource as ApiResource;
 use Cottect\Transformers\ModelTransformer;
+use Cottect\Api\ApiResource as ApiResource;
 
 class ResourceController extends CollectionController
 {

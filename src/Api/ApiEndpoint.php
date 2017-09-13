@@ -28,10 +28,6 @@ class ApiEndpoint
     protected $exampleHeaders;
     protected $exampleParameters;
 
-    protected $allowedRoles = [];
-    protected $deniedRoles = [];
-
-
     public function __construct($path, $httpMethod = HttpMethods::GET, $handlerMethod = null)
     {
         $this->path = $path;
@@ -381,69 +377,5 @@ class ApiEndpoint
     {
         $this->postedDataMethod(PostedDataMethods::JSON_BODY);
         return $this;
-    }
-
-    /**
-     * Allows access to this endpoint for role with the given names.
-     *
-     * @param ...array $roleNames Names of the roles to allow
-     *
-     * @return static
-     */
-    public function allow()
-    {
-        $roleNames = func_get_args();
-
-        // Flatten array to allow array inputs
-        $roleNames = Core::array_flatten($roleNames);
-
-        foreach ($roleNames as $role) {
-
-            if (!in_array($role, $this->allowedRoles)) {
-                $this->allowedRoles[] = $role;
-            }
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return string[] Array of allowed role-names
-     */
-    public function getAllowedRoles()
-    {
-        return $this->allowedRoles;
-    }
-
-    /**
-     * Denies access to this endpoint for role with the given names.
-     *
-     * @param ...array $roleNames Names of the roles to allow
-     *
-     * @return static
-     */
-    public function deny()
-    {
-        $roleNames = func_get_args();
-
-        // Flatten array to allow array inputs
-        $roleNames = Core::array_flatten($roleNames);
-
-        foreach ($roleNames as $role) {
-
-            if (!in_array($role, $this->deniedRoles)) {
-                $this->deniedRoles[] = $role;
-            }
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return string[] Array of denied role-names
-     */
-    public function getDeniedRoles()
-    {
-        return $this->deniedRoles;
     }
 }

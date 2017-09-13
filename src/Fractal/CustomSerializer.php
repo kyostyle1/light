@@ -11,7 +11,6 @@ class CustomSerializer extends ArraySerializer
         if ($resourceKey == null) {
             return $data;
         }
-
         return [$resourceKey ?: 'data' => $data];
     }
 
@@ -20,7 +19,6 @@ class CustomSerializer extends ArraySerializer
         if ($resourceKey == null) {
             return $data;
         }
-
         return [$resourceKey ?: 'data' => $data];
     }
 }
