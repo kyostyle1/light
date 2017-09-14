@@ -10,8 +10,7 @@
     "php": ">=7.0",
     "ext-phalcon": ">=3.0.0",
     "guzzlehttp/guzzle": "^6.3",
-    "league/fractal": "^0.13.0",
-    "cottect/light": "^1.0"
+    "league/fractal": "^0.13.0"
   },
   "license": "MIT"
 }
