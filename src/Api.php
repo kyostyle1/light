@@ -5,19 +5,22 @@ namespace Cottect\Light;
 use Cottect\Light\Api\ApiCollection;
 use Cottect\Light\Api\ApiEndpoint;
 use Cottect\Light\Api\ApiResource;
-use Cottect\Light\Constants\Services;
 
+use Cottect\Light\Constants\Services;
 use Phalcon\Mvc\Micro;
 use Phalcon\Mvc\Micro\CollectionInterface;
 
 /**
+ * Class Api
+ * @package Cottect\Light extends PhalconRest
+ *
  * @property \Cottect\Light\QueryParsers\PhqlQueryParser $phqlQueryParser
  * @property \Cottect\Light\Api $application
  * @property \Cottect\Light\Http\Request $request
  * @property \Cottect\Light\Http\Response $response
+ * @property \Phalcon\Acl\AdapterInterface $acl
  * @property \Cottect\Light\Data\Query $query
  * @property \Cottect\Light\Data\Query\UrlQueryParser $urlQueryParser
- * @property \Phalcon\Acl\AdapterInterface $acl
  */
 class Api extends Micro
 {
@@ -75,6 +78,8 @@ class Api extends Micro
                 $this->endpointsByIdentifier[$fullIdentifier] = $endpoint;
             }
         }
+
+        return parent::mount($collection);
     }
 
     /**
