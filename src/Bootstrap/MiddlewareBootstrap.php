@@ -4,9 +4,9 @@ namespace Cottect\Light\Bootstrap;
 
 use Cottect\Light\Api;
 use Cottect\Light\BootstrapInterface;
-use Cottect\Light\Middleware\UrlQueryMiddleware;
-use Cottect\Light\Middleware\FractalMiddleware;
 use Cottect\Light\Middleware\CorsMiddleware;
+use Cottect\Light\Middleware\FractalMiddleware;
+use Cottect\Light\Middleware\UrlQueryMiddleware;
 use Cottect\Light\Middleware\NotFoundMiddleware;
 use Cottect\Light\Middleware\OptionsResponseMiddleware;
 
