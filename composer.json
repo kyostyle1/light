@@ -1,17 +1,16 @@
 {
-  "name": "cottect/cottect",
-  "description": "Cottect core based on Phalcon REST Boilerplate",
+  "name": "cottect/light",
+  "description": "Cottect Light Phalcon API",
   "autoload": {
-    "psr-0": {
-      "Cottect": "src/"
+    "psr-4": {
+      "Cottect\\Light\\": "src/"
     }
   },
   "require": {
-    "redound/phalcon-rest": "^2.0.0",
+    "php": ">=7.0",
+    "ext-phalcon": ">=3.0.0",
     "guzzlehttp/guzzle": "^6.3",
-    "michelf/php-markdown": "^1.7",
-    "league/fractal": "^0.13.0",
-    "firebase/php-jwt": "^3.0"
+    "league/fractal": "^0.13.0"
   },
-  "license": "GPL"
+  "license": "MIT"
 }
